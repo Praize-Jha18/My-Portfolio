@@ -13,6 +13,7 @@ document.getElementById('email-form').addEventListener('submit', function(event)
     emailjs.send("service_6uf4wup", "template_z1j7erj", {
         from_name: from,
         from_email: email,
+        message: message,
         message: message 
     }).then(function(response) {
         console.log('Email sent successfully:', response);
